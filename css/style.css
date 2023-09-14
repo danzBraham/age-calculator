@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Font Family */
 
@@ -538,12 +538,32 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
 
 .-top-6{
   top: -1.5rem;
+}
+
+.top-\[76px\]{
+  top: 76px;
+}
+
+.left-2{
+  left: 0.5rem;
+}
+
+.left-1{
+  left: 0.25rem;
+}
+
+.left-\[2px\]{
+  left: 2px;
 }
 
 .m-auto{
@@ -558,6 +578,10 @@ video {
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-9{
   height: 2.25rem;
 }
@@ -568,10 +592,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-full{
-  height: 100%;
 }
 
 .w-8{
@@ -611,8 +631,8 @@ video {
   gap: 2.25rem;
 }
 
-.justify-self-center{
-  justify-self: center;
+.gap-12{
+  gap: 3rem;
 }
 
 .overflow-hidden{
@@ -721,11 +741,6 @@ video {
   padding-right: 0.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pb-4{
   padding-bottom: 1rem;
 }
@@ -734,29 +749,16 @@ video {
   padding-top: 0.5rem;
 }
 
-.text-center{
-  text-align: center;
-}
-
 .font-poppins{
   font-family: Poppins, sans-serif;
 }
 
+.text-\[10px\]{
+  font-size: 10px;
+}
+
 .text-\[40px\]{
   font-size: 40px;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-\[42px\]{
-  font-size: 42px;
-}
-
-.text-\[44px\]{
-  font-size: 44px;
 }
 
 .text-base{
@@ -764,8 +766,16 @@ video {
   line-height: 1.5rem;
 }
 
+.text-\[8px\]{
+  font-size: 8px;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .font-medium{
@@ -780,16 +790,32 @@ video {
   line-height: 46px;
 }
 
-.leading-\[48px\]{
-  line-height: 48px;
-}
-
-.leading-\[50px\]{
-  line-height: 50px;
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-transparent{
   color: transparent;
+}
+
+.error{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.not-valid{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.not-valid:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.pop-error{
+  display: block;
 }
 
 .required\:border-yellow-400:required{

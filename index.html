@@ -12,36 +12,66 @@
       class="flex h-screen items-center justify-center bg-gradient-to-br from-[#5F187C] to-[#22052E] p-5"
     >
       <div
-        class="flex w-full flex-col gap-9 overflow-hidden rounded-bl-[20px] rounded-br-[100px] rounded-tl-[20px] rounded-tr-[20px] bg-white p-5"
+        class="flex w-full flex-col gap-12 overflow-hidden rounded-bl-[20px] rounded-br-[100px] rounded-tl-[20px] rounded-tr-[20px] bg-white p-5"
       >
         <!-- Date Input -->
         <div class="flex items-center justify-center gap-3 text-base">
-          <div class="flex flex-col gap-2">
-            <p class="font-medium">Day</p>
+          <div class="relative flex flex-col gap-2">
+            <label id="day-label" for="day-input" class="font-medium"
+              >Day</label
+            >
             <input
+              id="day-input"
               type="text"
               maxlength="2"
+              placeholder="DD"
               class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none"
               required
             />
+            <p
+              id="day-error"
+              class="absolute left-1 top-[76px] hidden text-[8px] font-light text-red-500"
+            >
+              Must be a valid date
+            </p>
           </div>
-          <div class="flex flex-col gap-2">
-            <p class="font-medium">Month</p>
+          <div class="relative flex flex-col gap-2">
+            <label id="month-label" for="day-input" class="font-medium"
+              >Month</label
+            >
             <input
+              id="month-input"
               type="text"
               maxlength="2"
+              placeholder="MM"
               class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none"
               required
             />
+            <p
+              id="month-error"
+              class="absolute left-1 top-[76px] hidden text-[8px] font-light text-red-500"
+            >
+              Must be a valid month
+            </p>
           </div>
-          <div class="flex flex-col gap-2">
-            <p class="font-medium">Year</p>
+          <div class="relative flex flex-col gap-2">
+            <label id="year-label" for="day-input" class="font-medium"
+              >Year</label
+            >
             <input
+              id="year-input"
               type="text"
               maxlength="4"
+              placeholder="YYYY"
               class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none"
               required
             />
+            <p
+              id="year-error"
+              class="absolute left-1 top-[76px] hidden text-[8px] font-light text-red-500"
+            >
+              Must be in the past
+            </p>
           </div>
         </div>
         <!-- Date Icon -->
@@ -72,21 +102,27 @@
         >
           <h2>
             <span
+              id="age-years"
               class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent"
-              >19</span
-            >Years
+              >--</span
+            >
+            Years
           </h2>
           <h2>
             <span
+              id="age-months"
               class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent"
-              >19</span
-            >Months
+              >--</span
+            >
+            Months
           </h2>
           <h2>
             <span
+              id="age-days"
               class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent"
-              >19</span
-            >Days
+              >--</span
+            >
+            Days
           </h2>
         </div>
       </div>
