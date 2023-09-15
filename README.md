@@ -12,6 +12,10 @@ The Age Calculator is a web application that allows users to calculate their age
 - User-friendly interface for a seamless experience.
 - Easy-to-read results displaying your age in years, months, and days.
 
+## Try It Out
+
+You can try the Age Calculator here: [Age Calculator App](https://danzbraham.github.io/age-calculator/)
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to the development of this Age Calculator, please follow these guidelines:
