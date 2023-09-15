@@ -12,10 +12,12 @@
       class="flex h-screen items-center justify-center bg-gradient-to-br from-[#5F187C] to-[#22052E] p-5"
     >
       <div
-        class="flex w-full flex-col gap-12 overflow-hidden rounded-bl-[20px] rounded-br-[100px] rounded-tl-[20px] rounded-tr-[20px] bg-white p-5"
+        class="flex w-full flex-col gap-12 overflow-hidden rounded-bl-[20px] rounded-br-[100px] rounded-tl-[20px] rounded-tr-[20px] bg-white p-5 tablet:w-3/5 laptop:w-4/5"
       >
         <!-- Date Input -->
-        <div class="flex items-center justify-center gap-3 text-base">
+        <div
+          class="flex items-center justify-center gap-3 text-base laptop:text-lg"
+        >
           <div class="relative flex flex-col gap-2">
             <label id="day-label" for="day-input" class="font-medium"
               >Day</label
@@ -25,7 +27,7 @@
               type="text"
               maxlength="2"
               placeholder="DD"
-              class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none"
+              class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-400"
               required
             />
             <p
@@ -44,7 +46,7 @@
               type="text"
               maxlength="2"
               placeholder="MM"
-              class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none"
+              class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-400"
               required
             />
             <p
@@ -63,7 +65,7 @@
               type="text"
               maxlength="4"
               placeholder="YYYY"
-              class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none"
+              class="date w-full rounded-lg border p-2 font-bold required:border-yellow-400 valid:border-green-400 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-400"
               required
             />
             <p
@@ -98,12 +100,12 @@
         </div>
         <!-- Age -->
         <div
-          class="m-auto flex flex-col justify-center pb-4 pt-2 text-[40px] font-bold italic leading-[46px]"
+          class="m-auto flex flex-col justify-center pb-4 pt-2 text-[40px] font-bold italic leading-[46px] laptop:w-full laptop:flex-row laptop:justify-evenly laptop:gap-4"
         >
           <h2>
             <span
               id="age-years"
-              class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent"
+              class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent laptop:px-1"
               >--</span
             >
             Years
@@ -111,7 +113,7 @@
           <h2>
             <span
               id="age-months"
-              class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent"
+              class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent laptop:px-1"
               >--</span
             >
             Months
@@ -119,7 +121,7 @@
           <h2>
             <span
               id="age-days"
-              class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent"
+              class="bg-gradient-to-br from-[#C026D3] from-30% to-[#9433EA] to-70% bg-clip-text px-2 text-transparent laptop:px-1"
               >--</span
             >
             Days

@@ -57,6 +57,7 @@ function addError(label, input, message) {
   input.classList.remove("valid:border-green-400");
   input.classList.remove("required:border-yellow-400");
   input.classList.remove("focus:border-violet-400");
+  input.classList.remove("focus:ring-violet-400");
   label.classList.add("error");
   input.classList.add("not-valid");
   message.classList.add("pop-error");
@@ -66,6 +67,7 @@ function removeError(label, input, message) {
   input.classList.add("valid:border-green-400");
   input.classList.add("required:border-yellow-400");
   input.classList.add("focus:border-violet-400");
+  input.classList.add("focus:ring-violet-400");
   label.classList.remove("error");
   input.classList.remove("not-valid");
   message.classList.remove("pop-error");
